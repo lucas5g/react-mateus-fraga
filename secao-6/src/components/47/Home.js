@@ -1,8 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Home(){
   return(
-    <h2>Bem-vindo a página Home...</h2>
+    <div>
+      <h2>Bem-vindo a página Home...</h2>
+      <Link to='/about'>Ir para Sobre</Link>
+
+    </div>
+
   )    
 }
 
