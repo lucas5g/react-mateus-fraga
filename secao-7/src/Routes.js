@@ -1,9 +1,9 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Home from './pages/Home'
+import Home from './components/Home'
 import Header from './components/Header'
-function App() {
+function Routes() {
   return (
     <BrowserRouter>
       <Header />
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routes;
