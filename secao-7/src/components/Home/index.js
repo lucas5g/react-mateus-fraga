@@ -25,7 +25,7 @@ const Home = () => {
         <article key={r.id}>
           <strong>{r.nome}</strong>
           <img src={r.foto} alt={r.name}/>
-          <Link to={`/${r.id}`}>Acessar</Link>
+          <Link to={`/filme/${r.id}`}>Acessar</Link>
         </article>  
       )}
     </Container>
