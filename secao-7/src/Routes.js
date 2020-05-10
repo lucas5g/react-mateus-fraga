@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Error from './components/Error'
 import Movie from './pages/Movie'
 import Painel from './pages/Painel'
+import Styled from './pages/styled'
 import {autenticado} from './auth'
 
 const PrivateRoute = ({component: Component, ...rest}) => (
@@ -26,6 +27,7 @@ function Routes() {
         <Route exact path='/' component={Home} />
         <Route path='/filme/:id' component={Movie} />
         <PrivateRoute path='/painel' component={Painel} />
+        <Route path="/styled" component={Styled} />
         <Route path="*" component={Error} />
       </Switch>
 
